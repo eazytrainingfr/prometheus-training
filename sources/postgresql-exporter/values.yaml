@@ -1,0 +1,17 @@
+config:
+  datasource:
+    # Specify one of both datasource or datasourceSecret
+    host: odoo-postgresql
+    user: postgres
+    # Only one of password and passwordSecret can be specified
+    password: ""
+    # Specify passwordSecret if DB password is stored in secret.
+    passwordSecret:
+    # Secret name
+      name: odoo-postgresql
+    # Password key inside secret
+      key: postgresql-password
+    port: "5432"
+    database: ''
+service:
+  type: NodePort
