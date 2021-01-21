@@ -13,4 +13,4 @@ data:
     scrape_configs:
       - job_name: 'prometheus'
         static_configs:
-          - targets: ['prometheus-service.monitoring.svc:8090']
+          - targets: ['localhost:9090']
