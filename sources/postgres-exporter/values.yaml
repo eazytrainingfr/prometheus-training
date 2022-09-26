@@ -10,7 +10,7 @@ config:
     # Secret name
       name: odoo-postgresql
     # Password key inside secret
-      key: postgresql-password
+      key: postgres-password
     port: "5432"
     database: ''
 service:
